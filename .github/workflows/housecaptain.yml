@@ -2,6 +2,7 @@ name: housecaptain
 on:
   push:
     branches: [main]
+  pull_request:
   schedule:
     - cron: "0 8 * * 1"  # Mondays, after the members' own weekly self-audits
   workflow_dispatch:
