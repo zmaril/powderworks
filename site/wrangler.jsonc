@@ -1,0 +1,13 @@
+{
+  // Static-assets-only Worker for powderworks.dev. No server code — Cloudflare
+  // just serves the files built into ./dist by `bun run build`.
+  //
+  // In the Cloudflare dashboard set the build's Root directory to `site` so
+  // this file and ./dist resolve correctly.
+  "name": "powderworks",
+  "compatibility_date": "2026-07-04",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
