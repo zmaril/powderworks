@@ -1,0 +1,6 @@
+[checks]
+# no website yet — flip to "required" when powderworks.dev is live here
+website = "off"
+# no code yet — flip when the site code lands
+ci-exists = "off"
+conventional-commits = "required"
