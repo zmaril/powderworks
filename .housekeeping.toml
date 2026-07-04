@@ -1,3 +1,5 @@
+fleet = "zmaril/powderworks"
+
 [checks]
 # no website yet — flip to "required" when powderworks.dev is live here
 website = "off"

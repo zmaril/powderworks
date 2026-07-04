@@ -1,4 +1,5 @@
 name = "powderworks"
+captain = "zmaril/powderworks"
 
 [[member]]
 repo = "zmaril/powderworks"
@@ -23,3 +24,6 @@ conventional-commits = "required"
 [[policy.required-file]]
 path = "notes/design.md"
 scope = "public"
+
+[policy]
+locked = ["checks.stray-files", "stray-files.allow"]
