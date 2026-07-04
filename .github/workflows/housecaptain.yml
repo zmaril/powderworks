@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: "0 8 * * 1"  # Mondays, after the members' own weekly self-audits
   workflow_dispatch:
+    inputs:
+      dispatch:
+        description: also trigger every member's self-audit now
+        type: boolean
+        default: false
 
 jobs:
   captain:
@@ -15,3 +20,4 @@ jobs:
       - uses: zmaril/housekeeping@v1
         with:
           captain: housecaptain.toml
+          dispatch: ${{ inputs.dispatch || '' }}
