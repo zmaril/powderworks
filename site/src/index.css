@@ -7,8 +7,11 @@
     Menlo, Consolas, monospace;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
