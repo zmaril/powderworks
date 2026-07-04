@@ -147,32 +147,40 @@ export function App() {
 
             <ul className="mt-6 space-y-3">
               {projects.map((project) => (
-                <li key={project.name}>
-                  <div className="text-sm font-semibold">{project.name}</div>
-                  <p className="text-sm">{project.description}</p>
-                  <p className="text-sm">
-                    <a
-                      href={project.repo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline underline-offset-4"
-                    >
-                      GitHub
-                    </a>
-                    {project.site && (
-                      <>
-                        {" · "}
-                        <a
-                          href={project.site}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="underline underline-offset-4"
-                        >
-                          Site
-                        </a>
-                      </>
-                    )}
-                  </p>
+                <li key={project.name} className="flex gap-3">
+                  <img
+                    src={project.logo}
+                    alt=""
+                    aria-hidden
+                    className="mt-0.5 h-10 w-10 shrink-0 rounded-md bg-white object-contain ring-1 ring-black/10"
+                  />
+                  <div className="min-w-0">
+                    <div className="text-sm font-semibold">{project.name}</div>
+                    <p className="text-sm">{project.description}</p>
+                    <p className="text-sm">
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-4"
+                      >
+                        GitHub
+                      </a>
+                      {project.site && (
+                        <>
+                          {" · "}
+                          <a
+                            href={project.site}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline underline-offset-4"
+                          >
+                            Site
+                          </a>
+                        </>
+                      )}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>
