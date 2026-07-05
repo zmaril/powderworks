@@ -11,7 +11,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "PowderMonkey",
-    description: "An agent orchestration harness.",
+    description: "An agent orchestration harness for solo operators.",
     repo: "https://github.com/zmaril/powdermonkey",
     site: "https://firetheslopcannon.com",
     logo: "/logos/powdermonkey.png",

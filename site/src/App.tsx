@@ -118,7 +118,8 @@ export function App() {
               >
                 PowderMonkey
               </a>
-              , an agent orchestration harness. The pieces are purposefully
+              , an agent orchestration harness for solo operators. The pieces
+              are purposefully
               built to work independently, as well as play nice together. As a
               whole, Powderworks is a software factory for building agentic
               applications.{" "}
