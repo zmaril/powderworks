@@ -121,10 +121,7 @@ export function App() {
               , an agent orchestration harness. The pieces are purposefully
               built to work independently, as well as play nice together. As a
               whole, Powderworks is a software factory for building agentic
-              applications.
-            </p>
-
-            <p className="mt-3 text-sm leading-relaxed">
+              applications.{" "}
               <a
                 href="https://twitter.com/ZackMaril"
                 target="_blank"
@@ -133,7 +130,7 @@ export function App() {
               >
                 Zack
               </a>{" "}
-              hopes that you enjoy the software, and you are invited to the{" "}
+              hopes that you enjoy the software, and invites you to the{" "}
               <a
                 href="https://discord.com/invite/5G6KvdJffj"
                 target="_blank"
