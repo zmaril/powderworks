@@ -4,7 +4,7 @@ import { projects } from "./projects.ts";
 
 // Backgrounds live in public/bg/ as bg1.webp … bgN.webp. One is picked at
 // random on each page load.
-const BG_COUNT = 9;
+const BG_COUNT = 10;
 const bg = `/bg/bg${Math.floor(Math.random() * BG_COUNT) + 1}.webp`;
 
 type Pos = { x: number; y: number };
