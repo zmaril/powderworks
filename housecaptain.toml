@@ -31,3 +31,17 @@ scope = "public"
 # (housekeeping's own test fixtures) needs its own [stray-todos] ignore.
 [policy]
 locked = ["checks.stray-files", "stray-files.allow", "checks.stray-todos"]
+
+# Fleet-owned configs. The canonical copies live under .fleet/ here; a merge
+# that touches them fans out an isolated PR to each member via fleet-sync.yml.
+[[policy.managed-config]]
+check = "stylelint"
+paths = { ".stylelintrc.json" = ".fleet/stylelintrc.json" }
+
+[[policy.managed-config]]
+check = "vale"
+paths = { ".vale.ini" = ".fleet/vale/.vale.ini", "styles/" = ".fleet/vale/styles/" }
+
+[[policy.managed-config]]
+check = "codespell"
+paths = { ".codespellrc" = ".fleet/codespell/.codespellrc" }
