@@ -2,8 +2,7 @@ logo = "site/public/logos/powderworks.png"  # fleet dashboard logo
 fleet = "zmaril/powderworks"
 
 [checks]
-# no website yet — flip to "required" when powderworks.dev is live here
-website = "off"
-# no code yet — flip when the site code lands
-ci-exists = "off"
+# powderworks.dev is live and the site code lives here now
+website = "required"
+ci-exists = "required"
 conventional-commits = "required"

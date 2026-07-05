@@ -150,7 +150,7 @@ export function App() {
                     src={project.logo}
                     alt=""
                     aria-hidden
-                    className="mt-0.5 h-10 w-10 shrink-0 rounded-md bg-white object-contain ring-1 ring-black/10"
+                    className="mt-0.5 h-10 w-10 shrink-0 rounded-md object-contain"
                   />
                   <div className="min-w-0">
                     <div className="text-sm font-semibold">{project.name}</div>
