@@ -41,3 +41,7 @@ paths = { ".stylelintrc.json" = ".fleet/stylelintrc.json" }
 [[policy.managed-config]]
 check = "vale"
 paths = { ".vale.ini" = ".fleet/vale/.vale.ini", "styles/" = ".fleet/vale/styles/" }
+
+[[policy.managed-config]]
+check = "codespell"
+paths = { ".codespellrc" = ".fleet/codespell/.codespellrc" }
