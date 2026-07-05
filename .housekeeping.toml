@@ -5,4 +5,8 @@ fleet = "zmaril/powderworks"
 # powderworks.dev is live and the site code lives here now
 website = "required"
 ci-exists = "required"
+# ci-green gates on main being green, but on a fresh repo that's a bootstrap
+# deadlock (housekeeping <-> captain <-> fleet-sync are red only via each
+# other). Keep it advisory so main can converge. See housekeeping#56.
+ci-green = "recommended"
 conventional-commits = "required"
