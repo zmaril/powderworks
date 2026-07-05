@@ -1,0 +1,29 @@
+name: fleet-sync
+# Push fleet-owned managed configs (.fleet/**) out to members as isolated PRs.
+# Fires on a merge that changes a canonical config, plus a weekly backstop for
+# new members and sync PRs that were closed unmerged.
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".fleet/**"
+  schedule:
+    - cron: "0 7 * * 1"  # Mondays, before the captain's own weekly run
+  workflow_dispatch:
+
+concurrency:
+  group: fleet-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: zmaril/housekeeping@v1
+        with:
+          captain: housecaptain.toml
+          sync-configs: true
+          # Needs contents:write + pull_requests:write on the members —
+          # the default workflow token can't write to other repos.
+          token: ${{ secrets.FLEET_PAT }}
