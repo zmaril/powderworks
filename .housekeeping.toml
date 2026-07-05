@@ -1,4 +1,4 @@
-logo = "site/public/favicon.svg"  # fleet dashboard logo
+logo = "site/public/logos/powderworks.png"  # fleet dashboard logo
 fleet = "zmaril/powderworks"
 
 [checks]

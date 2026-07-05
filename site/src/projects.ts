@@ -40,6 +40,6 @@ export const projects: Project[] = [
     name: "powderworks",
     description: "Housecaptain of the fleet, and the code for this website.",
     repo: "https://github.com/zmaril/powderworks",
-    logo: "/logos/powderworks.svg",
+    logo: "/logos/powderworks.png",
   },
 ];
