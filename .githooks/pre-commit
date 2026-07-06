@@ -1,0 +1,13 @@
+#!/bin/sh
+# Full local gate — the same checks CI enforces, run before the commit lands so
+# agents catch failures here instead of ping-ponging with remote CI.
+# Bypass with `git commit --no-verify`. Activate with:
+#   git config core.hooksPath .githooks
+#
+# captain is a docs/fleet-config repo: its only blocking CI code-checks are
+# straitjacket and conventional commits (the codespell/vale/stylelint files here
+# are fleet-managed templates synced to members, not run as gates on captain).
+set -e
+run() { printf '\n\033[1m▶ %s\033[0m\n' "$*"; "$@"; }
+
+run ./.githooks/run-straitjacket
