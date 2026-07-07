@@ -14,6 +14,10 @@ repo = "zmaril/Straitjacket"
 repo = "zmaril/powdermonkey"
 
 [[member]]
+repo = "zmaril/fluessig"
+note = "entl's schema tool, extracted into its own project"
+
+[[member]]
 repo = "zmaril/entl"
 note = "pre-release, in flux — no CI yet"
 parked = true
