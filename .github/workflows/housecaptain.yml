@@ -15,6 +15,7 @@ on:
 jobs:
   captain:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
       - uses: zmaril/housekeeping@v0.15.0
