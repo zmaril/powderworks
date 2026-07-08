@@ -16,8 +16,12 @@ the auditors are on duty. The powderworks.dev site will live here too.
   GitHub repo is in good order, and helps fix it
 - [powdermonkey](https://github.com/zmaril/powdermonkey) — an agent
   orchestration harness for aspiring slop cannons
+- [fluessig](https://github.com/zmaril/fluessig) — entl's schema tool: describe
+  a typed entity graph once, project it everywhere
+- [disponent](https://github.com/zmaril/disponent) — dispatch work to coding
+  agents (local tmux or remote, exe.dev first) and watch it run
 - [entl](https://github.com/zmaril/entl) — pull a repo's git history and
-  forge activity into streaming data (pre-release)
+  forge activity into streaming data (parked, pre-release)
 
 ## Usage
 
