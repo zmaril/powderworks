@@ -53,3 +53,18 @@ paths = { ".vale.ini" = ".fleet/vale/.vale.ini", "styles/" = ".fleet/vale/styles
 [[policy.managed-config]]
 check = "codespell"
 paths = { ".codespellrc" = ".fleet/codespell/.codespellrc" }
+
+# biome is only used by some members, so these entries carry an `only` allow-list
+# (owner/repo, matching [[member]].repo exactly). The captain owns a shared BASE
+# config; each member keeps its own unmanaged biome.json that pulls the base in
+# with biome `extends` + local deltas — so the byte-identical sync only ever
+# touches the base file, never the member's own tuned config.
+[[policy.managed-config]]
+check = "biome"
+only = ["zmaril/powdermonkey"]
+paths = { "biome.base.json" = ".fleet/biome/base.json" }
+
+[[policy.managed-config]]
+check = "biome"
+only = ["zmaril/entl", "zmaril/Straitjacket"]
+paths = { "site/biome.base.json" = ".fleet/biome/site.json" }
