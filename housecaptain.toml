@@ -18,6 +18,10 @@ repo = "zmaril/fluessig"
 note = "entl's schema tool, extracted into its own project"
 
 [[member]]
+repo = "zmaril/disponent"
+note = "dispatch work to coding agents; exe.dev + local tmux backends"
+
+[[member]]
 repo = "zmaril/entl"
 note = "pre-release, in flux — schema, CLI, and docs still changing"
 parked = true
