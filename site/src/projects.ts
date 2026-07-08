@@ -4,7 +4,6 @@ export type Project = {
   repo: string;
   site?: string;
   logo: string;
-  parked?: boolean;
 };
 
 // The fleet — small, sharp tools, several refactored out of PowderMonkey.
@@ -43,16 +42,15 @@ export const projects: Project[] = [
     description:
       "Dispatches work to coding agents — local tmux or remote (exe.dev) — and watches it run.",
     repo: "https://github.com/zmaril/disponent",
-    logo: "/logos/disponent.svg",
+    logo: "/logos/disponent.png",
   },
   {
     name: "entl",
     description:
-      "A repo's git history and forge activity as streaming data. Parked, pre-release.",
+      "A repo's git history and forge activity as streaming data. Under active development.",
     repo: "https://github.com/zmaril/entl",
     site: "https://entl.dev",
     logo: "/logos/entl.png",
-    parked: true,
   },
   {
     name: "powderworks",

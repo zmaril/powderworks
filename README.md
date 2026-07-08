@@ -21,7 +21,7 @@ the auditors are on duty. The powderworks.dev site will live here too.
 - [disponent](https://github.com/zmaril/disponent) — dispatch work to coding
   agents (local tmux or remote, exe.dev first) and watch it run
 - [entl](https://github.com/zmaril/entl) — pull a repo's git history and
-  forge activity into streaming data (parked, pre-release)
+  forge activity into streaming data (under active development)
 
 ## Usage
 

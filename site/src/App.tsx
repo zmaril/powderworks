@@ -30,12 +30,8 @@ export function App() {
               PowderMonkey
             </a>
             , an agent orchestration harness for solo operators. The pieces are
-            purposefully built to work on their own, and to play nice together.
-            As a whole, Powderworks is a software factory for building agentic
-            applications.
-          </p>
-
-          <p className="mt-4 text-[0.95rem] leading-relaxed text-neutral-700">
+            purposefully built to work on their own, and to play nice together —
+            as a whole, a software factory for building agentic applications.{" "}
             <a
               href="https://twitter.com/ZackMaril"
               target="_blank"
@@ -44,7 +40,7 @@ export function App() {
             >
               Zack
             </a>{" "}
-            hopes that you enjoy the software, and invites you to the{" "}
+            hopes you enjoy them, and invites you to the{" "}
             <a
               href="https://discord.com/invite/5G6KvdJffj"
               target="_blank"
@@ -66,16 +62,7 @@ export function App() {
                   className="mt-0.5 h-9 w-9 shrink-0 object-contain"
                 />
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-semibold">
-                      {project.name}
-                    </span>
-                    {project.parked && (
-                      <span className="rounded-sm bg-neutral-200 px-1.5 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-neutral-500">
-                        parked
-                      </span>
-                    )}
-                  </div>
+                  <div className="text-sm font-semibold">{project.name}</div>
                   <p className="text-sm leading-snug text-neutral-600">
                     {project.description}
                   </p>
@@ -106,10 +93,6 @@ export function App() {
               </li>
             ))}
           </ul>
-
-          <footer className="mt-auto pt-9 text-xs text-neutral-400">
-            powderworks.dev — MIT licensed
-          </footer>
         </div>
       </aside>
 
