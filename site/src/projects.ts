@@ -35,7 +35,7 @@ export const projects: Project[] = [
     description:
       "entl's schema tool: describe a typed entity graph once, project it everywhere.",
     repo: "https://github.com/zmaril/fluessig",
-    logo: "/logos/fluessig.svg",
+    logo: "/logos/fluessig.png",
   },
   {
     name: "disponent",
