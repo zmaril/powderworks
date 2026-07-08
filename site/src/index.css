@@ -5,6 +5,11 @@
     Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Fira Code",
     Menlo, Consolas, monospace;
+
+  /* The fleet's palette: warm paper and a molten-orange accent, drawn from
+     the mill artwork and the logos. */
+  --color-paper: #f6f2ea; /* straitjacket-allow:color — palette definition */
+  --color-flame: #e0592b; /* straitjacket-allow:color — palette definition */
 }
 
 html,
