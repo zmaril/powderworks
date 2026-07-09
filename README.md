@@ -43,8 +43,10 @@ delegation check in CI.
 ## Contributing
 
 The tools take contributions in their own repos — this one is mostly a
-roster and a website. If the captain is wrong about what a healthy fleet
-looks like, [file an issue](https://github.com/zmaril/housekeeping/issues)
+roster and a website. To hack on the site locally, run `scripts/dev.sh` to
+install the powderworks.dev site deps; see [`site/README.md`](site/README.md)
+for the dev and build commands. If the captain is wrong about what a healthy
+fleet looks like, [file an issue](https://github.com/zmaril/housekeeping/issues)
 on housekeeping, where the checks live. PR titles here follow
 [conventional commits](https://www.conventionalcommits.org).
 
