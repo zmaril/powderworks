@@ -22,6 +22,10 @@ repo = "zmaril/disponent"
 note = "dispatch work to coding agents; exe.dev + local tmux backends"
 
 [[member]]
+repo = "zmaril/logref"
+note = "design spec for a searchable reference of database log/error messages"
+
+[[member]]
 repo = "zmaril/entl"
 note = "pre-release, in flux — schema, CLI, and docs still changing"
 
