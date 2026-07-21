@@ -1,3 +1,5 @@
+<!-- housekeeper:description An agentic consortium building for the here and now — captain of the powderworks fleet -->
+<!-- housekeeper:topics agents, fleet, housekeeping, powderworks, repo-hygiene -->
 # powderworks
 
 An agentic consortium building for the here and now.
