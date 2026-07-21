@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  site:
+    name: site (lint + format + test + build)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v7
+      - uses: oven-sh/setup-bun@v2
+      - name: install site deps
+        run: bun install --frozen-lockfile
+      # biome covers both lint and format for the site's hand-written TS/TSX/CSS.
+      - name: biome check (lint + format)
+        run: bunx @biomejs/biome check .
+      - name: bun test
+        run: bun test
+      - name: vite build
+        run: bun run build
